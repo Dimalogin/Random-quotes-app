@@ -9,7 +9,7 @@ module.exports = (argv, env) => {
     mode: "development",
     devtool: "source-map",
     entry: {
-      main: "./src/index",
+      main: "./random-quotes/index",
     },
     output: {
       path: resolve(__dirname, "./dist"),
@@ -41,7 +41,7 @@ module.exports = (argv, env) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: "./src/index.html",
+        template: "./random-quotes/index.html",
       }),
       new MiniCssExtractPlugin({
         filename: "[name].[contenthash].css",
@@ -49,7 +49,7 @@ module.exports = (argv, env) => {
       new CopyPlugin({
         patterns: [
           {
-            from: resolve(__dirname, "src/images"),
+            from: resolve(__dirname, "random-quotes/images"),
             to: resolve(__dirname, "dist/images"),
           },
         ],

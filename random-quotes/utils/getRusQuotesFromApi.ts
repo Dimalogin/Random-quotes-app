@@ -1,4 +1,5 @@
-import { rusQuotes } from "../rus-quotes/quotes";
+import { rusQuotes } from "../data/rus-quotes";
+
 
 function getRusQuotes(): Array<{
   text: string;

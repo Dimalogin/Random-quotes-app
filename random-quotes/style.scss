@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  background-color: #fafafa;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  box-sizing: content-box;
+}
+
+.main {
+  flex: 1 1 auto;
+
+  .main__body {
+    min-height: calc(100vh - 140px);
+    position: relative;
+  }
+}

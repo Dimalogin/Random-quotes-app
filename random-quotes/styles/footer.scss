@@ -1,0 +1,35 @@
+footer {
+  background-color: #5955b3;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-size: 1.1em;
+
+  .footer__row {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .github-link {
+      cursor: pointer;
+      color: #fff;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .footer-logo {
+      .logo__link {
+        display: flex;
+        background-color: #fff;
+        min-width: 50px;
+        min-height: 30px;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}

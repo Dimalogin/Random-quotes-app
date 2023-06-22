@@ -1,0 +1,97 @@
+.jokes {
+  width: 550px;
+  font-family: "Rubik", sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  .jokes-joke {
+    width: 100%;
+    background-color: #f4f5ff;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    padding: 1.6em;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 30px 0px rgba(34, 60, 80, 0.2);
+
+    .joke-loader {
+      display: none;
+      width: 4rem;
+      height: 4rem;
+      border: 7px solid white;
+      border-top: 6px solid #6562bd;
+      border-radius: 100%;
+      margin: 20px auto;
+      animation: spin 1s infinite linear;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .joke__text {
+      font-size: 1.5em;
+      font-weight: 500;
+      color: #6562bd;
+      line-height: 32px;
+      letter-spacing: 0.3px;
+      text-align: justify;
+      margin: 0px 0px 30px 0px;
+    }
+    .joke-author {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      .author__title {
+        color: rgb(92, 92, 92);
+        font-size: 0.8em;
+      }
+
+      .author__text {
+        margin-left: 5px;
+        color: #6562bd;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .jokes-joke {
+      margin-bottom: 40px;
+    }
+  }
+
+  .btn__generate {
+    display: block;
+    margin: 0px auto;
+    background-color: #6562bd;
+    color: #fff;
+    font-size: 1.3em;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    padding: 3px 10px;
+    min-height: 45px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 30px 0px rgba(34, 60, 80, 0.2);
+
+    &:hover {
+      background-color: #6c69da;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .jokes {
+    width: 290px;
+  }
+}

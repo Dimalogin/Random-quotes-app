@@ -1,1 +1,1 @@
-# Random-quotes-app
+# Random-quotes-app - project from RSSchool

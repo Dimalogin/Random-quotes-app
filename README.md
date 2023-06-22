@@ -1,6 +1,6 @@
 ## Random-quotes-app - project from RSSchool
 
-Random-quotes-app: [Demo]()
+Random-quotes-app: [Demo](https://dimalogin.github.io/Random-quotes-app/)
 
 Implemented:
 
